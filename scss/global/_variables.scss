@@ -1,0 +1,157 @@
+// Font
+$font: 'TT Smalls Trial';
+$fontHeading: 'TT Norms Pro Trial Expanded', sans-serif;
+
+// Size
+$mainFontColor: #190c50; // use
+$fontColorDark: #6b6b6b;
+$fontColorDarker: #6b6b6b;
+$fontColorLight: #919191;
+$fontColorLighter: #948488;
+$mainFontSize: 16px;
+$mainFontWeight: 400;
+$mainLineHeight: 1.4;
+
+// Main color
+$default-color: #ffffff; // use
+$default-secondary: #A1DAFF; // use
+$default-third: #dcf1ff; // use
+$default-fourth: #676767;
+$primary-color: #9A86EB; // use
+$primary-secondary: #CDC1FF; // use
+$primary-third: #DAD1FF; // use
+$primary-fourth: #80CBFC; // use as hover bg
+$primary-fifth: #00537a;
+$primary-sixth: #e6f0ff;
+$success-color: #28A485; // use as main color
+$success-secondary: #54c9ac; // use
+$success-third: #AAF2E0; // use
+$success-dark: #3f670c;
+$danger-color: #ee4122;
+$danger-secondary: #c0260a;
+$danger-third: #e09284;
+$warning-color: #e9553b;
+$add-color: #756AA5; // use
+$add-second: #B5AED3; // use
+
+$light-color: #999999;
+$default-dark: #2d3a3f;
+$yellow-color: #E9EB9C; // use
+$purple-color: #8d00bf;
+$gold-color: #FCBF17; // use
+$gold-light: #FFD76A; // use
+$gold-hover: #d8a75c;
+$gold-active: #ac7622;
+$gold-secondary: #ffeed4;
+
+// Backgrounds
+$main-bg: #EDF4FC; // use
+$primary-bg: #dad1ff; // use
+$primary-secondary-bg: #A1DAFF; // use
+$primary-third-bg: #f0f1bd; // use
+$primary-fourth-bg: #EEF9E0; // use
+
+// Neutral Color
+$neutral-primary: #F8F6FF; // use as input bg
+$neutral-regular: #F9F6FF; // use as feed bg
+
+$neutral-secondary: #e5e5e5;
+$neutral-third: #f5f8ff;
+$neutral-six: #eff4ff;
+$neutral-fourth: #46494b;
+$neutral-five: #bababa;
+$neutral-placeholder: #bebebe;
+
+// Border Color
+$border-base: #cccccc;
+$border-darkest: #1c1c1c;
+$border-dark: #676665;
+$border-light: #ececec;
+$border-lighter: #e7e7e7;
+$border-lightex: #f1f1f1;
+
+// Mobile First
+$width-380: 380px;
+$mini-width: 480px;
+$landscape-width: 568px;
+$phablet-width: 768px;
+$tablet-width: 1024px;
+$notebook-width: 1150px;
+$desktop-width: 1280px;
+$desktop-width-full: 1600px;
+$desktop-width-full-hd: 1920px;
+
+/**
+@media (min-width: $tablet-width) and (max-width: $tablet-width-only) {}
+@media (min-width: $phablet-width) and (max-width: $tablet-width-only) {}
+@media (min-width: $phablet-width) and (max-width: $phablet-width-only) {} // 768-1023
+@media (min-width: $tablet-width) and (max-width: $notebook-width) {} // 1024-1150
+@media (min-width: $desktop-width) and (max-width: $desktop-width-full-hd) {}
+@media (min-width: $mini-width) and (max-width: $notebook-width) {} // 480-1150
+@media (min-width: $width-380) {}
+@media (min-width: $mini-width) {}
+@media (min-width: $phablet-width) {}
+@media (min-width: $tablet-width) {}
+@media (min-width: $notebook-width) {}
+@media (min-width: $desktop-width) {}
+@media (min-width: $desktop-width-full) {}
+*/
+
+// Desktop First
+$m1659: 1659px;
+$m1549: 1549px;
+$m1439: 1439px;
+$notebook-width-only: 1365px;
+$tablet-width-only: 1279px;
+$phablet-width-full-only: 1151px;
+$phablet-width-only: 1023px;
+$mobile-width-only: 767px;
+$landscape-width-only: 567px;
+$small-gadjet: 479px;
+$retina-dpi: 144dpi;
+$retina-dppx: 1.5dppx;
+
+/**
+// Desktop First Media
+@media (max-width: 1365px) {}
+@media (max-width: 1279px) {}
+@media (max-width: 1151px) {}
+@media (max-width: 1023px) {}
+@media (max-width: 767px) {}
+@media (max-width: 567px) {}
+@media (max-width: 479px) {}
+
+===========
+@media (max-width: $desktop-width-full-hd) {}
+@media (max-width: $m1659) {}
+@media (max-width: $m1549) {}
+@media (max-width: $m1439) {}
+@media (max-width: $notebook-width-only) {}  // 1365
+@media (max-width: $tablet-width-only) {}  // 1279
+@media (max-width: $phablet-width-full-only) {}  // 1151
+@media (max-width: $phablet-width-only) {}  // 1023
+@media (max-width: $mobile-width-only) {}  // 767
+@media (max-width: $landscape-width-only) {}  // 567
+@media (max-width: $small-gadjet) {}  // 479
+
+
+
+// other
+@media (max-width: $mobile-width) {}
+@media (min-width: $mobile-width-only) and (max-width: $phablet-width) {}
+@media (min-width: $phablet-width) and (max-width: $notebook-width-only) {}
+@media (min-width: $tablet-width-only) and (max-width: $tablet-width) {}
+@media (min-width: $desktop-width-only) and (max-width: $desktop-width) {}
+@media (max-width: $phablet-width) {}
+@media (max-width: $tablet-width) {}
+@media (max-width: $desktop-width) {}
+
+Пример подключения фона с ретиной:
+.banner {
+  background: url("../img/gift-photo-mobile@1x.jpg") no-repeat center / 100%;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background: url("../img/gift-photo-mobile@2x.jpg") no-repeat center / 100%;
+  }
+}
+ */

@@ -1,0 +1,52 @@
+.materials-slider {
+  position: relative;
+  grid-column: 3 span;
+  width: 435px;
+  // height: 100%;
+  margin-top: 39px;
+
+  &__cards {
+
+  }
+
+  &__list {
+    margin: 0;
+    padding: 0;
+  }
+
+  &__item {
+
+  }
+  .card-article {
+    list-style: none;
+    &__text {
+      height: 100%;
+      background-color: #28292F;
+      color:#FFFFFF;
+      padding: 20px;
+      // align-self: stretch;
+    }
+
+    &__title {
+      margin: 0;
+    }
+    &__button {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-decoration: none;
+      width: 100%;
+      height: 58px;
+      background-color:#F7CE03 ;
+      color: #28292F;
+    }
+  }
+  &__prev{
+    background-image: url(/img/dashicons_arrow-left.png);
+    background-repeat: no-repeat;
+  }
+  &__next{
+    background-image: url(/img/dashicons_arrow-rigth.png);
+    background-repeat: no-repeat;
+  }
+}
