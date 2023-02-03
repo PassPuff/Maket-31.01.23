@@ -1,52 +1,73 @@
 .materials-slider {
   position: relative;
-  grid-column: 3 span;
-  width: 435px;
-  // height: 100%;
+  grid-column: 4 span;
+  width: 100%;
   margin-top: 39px;
+  text-rendering: auto;
+  align-self: flex-start;
+
 
   &__cards {
-
   }
-
   &__list {
     margin: 0;
     padding: 0;
   }
 
   &__item {
-
+    display: flex;
+    flex-direction: column;
+    height: auto ;
   }
   .card-article {
-    list-style: none;
     &__text {
-      height: 100%;
-      background-color: #28292F;
-      color:#FFFFFF;
-      padding: 20px;
-      // align-self: stretch;
+      display: flex;
+      flex-direction: column;
+      background-color: #28292f;
+      color: white;
+      flex-grow: 1;
     }
 
     &__title {
       margin: 0;
+      padding: 20px;
+    }
+    &__discription {
+      padding:0 20px ;
     }
     &__button {
       display: flex;
       justify-content: center;
       align-items: center;
       text-decoration: none;
-      width: 100%;
       height: 58px;
       background-color:#F7CE03 ;
       color: #28292F;
+      margin-top: auto;
     }
   }
-  &__prev{
-    background-image: url(img/dashicons_arrow-left.png);
+  &__prev,
+  &__next{
+    width: 52px;
+    height: 52px;
+    background-color: rgba(255, 255, 255, 0.42);
+    color: #28292F;
+    &::after {
+    font-size: 1.5625rem;
+
+    }
+  }
+  &__prev {
+    // background-image: url(/img/dashicons_arrow-left.png);
     background-repeat: no-repeat;
+    left: 0;
+
   }
   &__next{
-    background-image: url(img/dashicons_arrow-rigth.png);
+    // background-image: url(/img/dashicons_arrow-rigth.png);
     background-repeat: no-repeat;
+    left: 52px;
   }
+
+
 }

@@ -5,8 +5,8 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/9.0.1/swiper-bundle.css"/>
   <link rel="stylesheet" href="css/main.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
   <title>Materials</title>
 </head>
 
@@ -14,6 +14,7 @@
   <section class="materials">
     <div class="container  materials__wrapper">
       <h2 class="materials__title">Materials</h2>
+
       <div class="materials__column-table">
         <table class="materials__table  table">
           <tbody class="table__body">
@@ -116,73 +117,54 @@
             </tr>
           </tbody>
         </table>
-
         <div class="materials__contact contact">
           <p class="contact__text">Could not find your material?</p>
-          <a class="contact__link" href="#">Contact us!</a>
+          <a class="contact__link" href="#"><b>Contact us!</b></a>
         </div>
       </div>
 
-      <article class="materials__article  materials__column-article   materials-slider">
-        <div class="swiper  js-slider-materials  materials-slider__cards">
-          <ul class="swiper-wrapper materials-slider__list">
+      <article class="materials__article  materials-slider  swiper  js-slider-materials">
+          <ul class="swiper-wrapper  materials-slider__list">
             <li class="swiper-slide  materials-slider__item  card-article">
-              <img class="card-article__picture" src="img/rectangle.jpg" alt="Cutting" width="435" height="306">
-              <div class="card-article__text">
-                <h3 class="card-article__title">Name</h3>
-                <p class="card-article__discription">Wattsan machines have an enclosure thickness of 2.9 mm or greater
-                  on machines like the 1610 and
-                  larger.
-                  The extra enclosure thickness increases machine life and performance.
-                </p>
+                <img class="card-article__picture" src="img/rectangle.jpg" alt="Cutting" width="435" height="306">
+                <div class="card-article__text">
+                  <h3 class="card-article__title">Name</h3>
+                  <p class="card-article__discription">Wattsan machines have an enclosure thickness of 2.9 mm or greater on machines like the 1610 and larger. The extra enclosure thickness increases machine life and performance.
+                  </p>
+                  <a class="button  card-article__button" href="#">Read the article</a>
               </div>
             </li>
             <li class="swiper-slide  materials-slider__item  card-article">
               <img class="card-article__picture" src="img/rectangle.jpg" alt="Cutting" width="435" height="306">
               <div class="card-article__text">
                 <h3 class="card-article__title">Name2</h3>
-                <p class="card-article__discription">Wattsan machines have an enclosure thickness of 2.9 mm or greater
-                  on machines like the 1610 and
-                  larger.
-                  The extra enclosure thickness increases machine life and performance.</p>
-              </div>
-            </li>
-            <li class="swiper-slide  materials-slider__item  card-article">
-              <img class="card-article__picture" src="img/rectangle.jpg" alt="Cutting" width="435" height="306">
-              <div class="card-article__text">
-                <h3 class="card-article__title">Name3</h3>
-                <p class="card-article__discription">Wattsan machines have an enclosure thickness of 2.9 mm or greater
-                  on machines like the 1610 and
-                  larger.
-                  The extra enclosure thickness increases machine life and performance.
-                  Wattsan machines have an enclosure thickness of 2.9 mm or greater
-                  on machines like the 1610 and
-                  larger.
-                  The extra enclosure thickness increases machine life and performance.
-                  Wattsan machines have an enclosure thickness of 2.9 mm or greater
-                  on machines like the 1610 and
-                  larger.
-                  The extra enclosure thickness increases machine life and performance.
+                <p class="card-article__discription">Wattsan machines have an enclosure thickness of 2.9 mm or greater on machines like the 1610 and larger. The extra enclosure thickness increases machine life and performance.
                 </p>
-              </div>
-            </li>
-          </ul>
-          <a class="button  card-article__button" href="#">Read the article</a>
+                <a class="button  card-article__button" href="#">Read the article</a>
+            </div>
+          </li>
+          <li class="swiper-slide  materials-slider__item  card-article">
+            <img class="card-article__picture" src="img/rectangle.jpg" alt="Cutting" width="435" height="306">
+            <div class="card-article__text">
+              <h3 class="card-article__title">Name3</h3>
+              <p class="card-article__discription">Wattsan machines have an enclosure thickness of 2.9 mm or greater
+                on machines like the 1610 and
+                larger.
 
+
+              </p>
+              <a class="button  card-article__button" href="#">Read the article</a>
+          </div>
+        </li>
+          </ul>
           <div class="swiper-button-prev  materials-slider__prev"></div>
           <div class="swiper-button-next  materials-slider__next"></div>
-        </div>
-
-
       </article>
     </div>
     </div>
   </section>
-
 </main>
-
-<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/9.0.1/swiper-bundle.min.js"></script>
 <script src="js/main.js"></script>
 </body>
-
 </html>
